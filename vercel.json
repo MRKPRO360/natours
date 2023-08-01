@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "projectSettings": {
+    "buildCommand": null,
+    "devCommand": null,
+    "framework": "expressjs",
+    "commandForIgnoringBuildStep": "",
+    "installCommand": null,
+    "outputDirectory": null
+  },
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ]
+}
